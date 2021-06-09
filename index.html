@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Создание блоков с картинкой">
+		<title>Конструктор блоков</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script src="js/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="main">
+				<div class="block_gen">
+					<div class="constructor">
+						<div class="con_img">
+							<label for="upload_img">
+								<img src="img/camera-icon.jpg" class="con_image"/>
+							</label>
+							<input type="file" id="upload_img" name="upload_img" accept="image/png, image/gif, image/jpeg" style="display:none" />
+						</div>
+						<div class="con_inputs">
+							<input type="text" placeholder="Заголовок" class="con_title" value="">
+							<div class="ttl_err"></div>
+							<input type="text" placeholder="Ссылка" class="con_link" value="">
+							<textarea placeholder="Текст" class="con_text"></textarea>
+							<div class="txt_err"></div>
+							<button id="con_create" class="con_btn">Создать</button>
+						</div>
+					</div>
+					<div class="blocks">
+						<div id="preloader" class="default" class="default">
+							<div class="loader"></div>
+						</div>
+					</div>
+					<div class="show_more hidden"><p>Показать больше</p></div>
+				</div>
+			</div>
+		</div>
+	<script src="js/main.js"></script>
+	</body>
+</html>
